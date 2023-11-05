@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: moringak8s-gpu
+spec:
+ nodeSelector:
+   gpu: "true"
+ containers:
+ - image: calvin/moringak8s
+   name: moringak8s
