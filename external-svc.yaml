@@ -1,0 +1,8 @@
+#creating servicewith manual endpoints reource
+apiVersion: v1
+kind: Service
+metadata:
+ name: external-service
+spec:
+ ports:
+ - port: 80
