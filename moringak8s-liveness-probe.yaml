@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: moringak8s-liveness
+spec:
+ containers:
+ - image: ckodalo/moringak8s-unhealthy
+   name: moringak8s
+   livenessProbe:
+     httpGet:
+       path: /
+       port: 8080
