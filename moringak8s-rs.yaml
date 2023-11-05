@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+ name: moringak8s
+spec:
+ replicas: 3
+ selector:
+   matchLabels:
+       app: moringak8s
+ template:
+   metadata:
+     labels:
+       app: moringak8s
+   spec:
+     containers:
+     - name: moringak8s
+       image: ckodalo/moringak8s
