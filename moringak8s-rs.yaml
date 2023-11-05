@@ -11,6 +11,7 @@ spec:
    metadata:
      labels:
        app: moringak8s
+       profile: test
    spec:
      containers:
      - name: moringak8s
