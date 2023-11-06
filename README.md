@@ -12,3 +12,8 @@ rel , which shows whether the application running in the pod is a stable, beta, 
 
 * with liveness-probe
 * in replicasets
+
+The actual act of managing the replicated Pods is an example of a reconciliation loop. 
+
+![recon-loop](https://github.com/ckodalo/basicApp/assets/48943229/25467b79-dbde-469b-afd2-573ae485365e)
+
